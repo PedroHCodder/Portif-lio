@@ -1,0 +1,391 @@
+/* ===================================================
+   PORTFÓLIO & CURRÍCULO — ESTILO ANGELICAL CRIATIVO
+   Cores: Branco Divino (#FFFFFF) & Amarelo Pastel (#FFE66D / #FFF3B0)
+   =================================================== */
+
+/* --- RESET & CONFIGURAÇÕES ETÉREAS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Fundo celestial com degradê radial sutil de luz solar/divina */
+    background: radial-gradient(circle at 50% -5%, #fffef7 0%, #ffffff 55%, #faf8f0 100%);
+    color: #2c2c2c;
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* --- CABEÇALHO CELESTIAL (GLASSMORPHISM) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 230, 109, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 25px rgba(255, 230, 109, 0.12);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    text-shadow: 0 0 14px rgba(255, 230, 109, 0.7);
+}
+
+.logo span {
+    color: #bfa12a;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+/* Efeito de halo sob os links do menu ao passar o rato */
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #FFE66D;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #FFE66D;
+}
+
+nav a:hover {
+    color: #111111;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* --- CONTAINER CENTRAL --- */
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- SEÇÃO HERO (APRESENTAÇÃO ANGELICAL) --- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 20px 65px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Aura/Halo de Luz Radiante ao Fundo */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(255, 230, 109, 0.3) 0%, rgba(255, 243, 176, 0.12) 45%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(35px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+/* Destaque no nome em Amarelo Pastel com brilho reluzente */
+.hero h1 span {
+    background: linear-gradient(135deg, #FFF9D6 0%, #FFE66D 100%);
+    padding: 4px 16px;
+    border-radius: 14px;
+    box-shadow: 0 0 22px rgba(255, 230, 109, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: inline-block;
+}
+
+/* Divisor Angelical com Estrelas */
+.divider-angelic {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 22px 0 28px 0;
+}
+
+.divider-angelic .line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFE66D, transparent);
+}
+
+.divider-angelic i {
+    color: #bfa12a;
+    font-size: 1.2rem;
+    text-shadow: 0 0 12px rgba(255, 230, 109, 0.9);
+}
+
+.hero p {
+    max-width: 680px;
+    font-size: 1.15rem;
+    color: #555555;
+    margin-bottom: 35px;
+}
+
+/* --- BOTÕES COM BRILHO DIVINO (GLOW) --- */
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #FFE66D 0%, #ffd43b 100%);
+    color: #1a1a1a;
+    box-shadow: 0 6px 22px rgba(255, 230, 109, 0.5);
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(255, 230, 109, 0.75);
+}
+
+.btn.secondary {
+    background: #ffffff;
+    color: #333333;
+    border-color: #ffe66d;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+}
+
+.btn.secondary:hover {
+    background: #FFFDF0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(255, 230, 109, 0.35);
+}
+
+/* --- SEÇÕES & CARTÕES ANGELICAIS --- */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 1.45rem;
+    color: #1a1a1a;
+    margin-bottom: 22px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #FFE66D, #FFF9D6, transparent);
+    border-radius: 3px;
+}
+
+.card-angelic {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 32px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 230, 109, 0.35);
+    box-shadow: 0 10px 32px rgba(255, 230, 109, 0.09), 0 2px 12px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.card-angelic:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 230, 109, 0.7);
+    box-shadow: 0 16px 38px rgba(255, 230, 109, 0.22);
+}
+
+.card-angelic p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+/* --- GRELHA DE CONHECIMENTOS (SKILLS) --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fffdf4 100%);
+    border: 1px solid rgba(255, 230, 109, 0.45);
+    padding: 20px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 18px rgba(255, 230, 109, 0.08);
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    background: #FFF9D6;
+    box-shadow: 0 10px 25px rgba(255, 230, 109, 0.3);
+}
+
+.skill-card i {
+    font-size: 1.7rem;
+    color: #bfa12a;
+    filter: drop-shadow(0 0 8px rgba(255, 230, 109, 0.7));
+}
+
+.skill-card strong {
+    color: #1a1a1a;
+    display: block;
+    font-size: 1.05rem;
+}
+
+.skill-card span {
+    font-size: 0.82rem;
+    color: #666;
+}
+
+/* --- GRELHA DE PROJETOS --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 15px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 230, 109, 0.35);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.02);
+}
+
+/* Faixa radiante superior nos cartões de projeto */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FFE66D, #FFF3B0, #FFE66D);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(255, 230, 109, 0.22);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    color: #111;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 0.98rem;
+}
+
+/* --- RODAPÉ CELESTIAL --- */
+footer {
+    background: rgba(255, 255, 255, 0.92);
+    border-top: 1px solid rgba(255, 230, 109, 0.35);
+    padding: 35px 0;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.conteudo-rodape p {
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+/* --- BOTÃO FLUTUANTE VOLTAR AO TOPO --- */
+#botao-topo {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background: linear-gradient(135deg, #FFE66D 0%, #ffd43b 100%);
+    color: #111;
+    border: none;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow: 0 6px 22px rgba(255, 230, 109, 0.55);
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+#botao-topo:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 28px rgba(255, 230, 109, 0.85);
+}
